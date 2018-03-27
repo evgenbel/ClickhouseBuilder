@@ -1,6 +1,6 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use Illuminate\Config\Repository;
 use Illuminate\Container\Container;
@@ -15,11 +15,11 @@ use Tinderbox\Clickhouse\Common\Format;
 use Tinderbox\Clickhouse\Query\QueryStatistic;
 use Tinderbox\Clickhouse\Query\Result;
 use Tinderbox\Clickhouse\Server;
-use Tinderbox\ClickhouseBuilder\Exceptions\NotSupportedException;
-use Tinderbox\ClickhouseBuilder\Integrations\Laravel\Builder;
-use Tinderbox\ClickhouseBuilder\Integrations\Laravel\ClickhouseServiceProvider;
-use Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Exceptions\NotSupportedException;
+use Evgenbel\ClickhouseBuilder\Integrations\Laravel\Builder;
+use Evgenbel\ClickhouseBuilder\Integrations\Laravel\ClickhouseServiceProvider;
+use Evgenbel\ClickhouseBuilder\Integrations\Laravel\Connection;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
 
 class LaravelIntegrationTest extends TestCase
 {

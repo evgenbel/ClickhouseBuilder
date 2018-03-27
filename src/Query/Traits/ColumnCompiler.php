@@ -1,9 +1,9 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Query\Traits;
+namespace Evgenbel\ClickhouseBuilder\Query\Traits;
 
-use Tinderbox\ClickhouseBuilder\Query\Column;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Query\Column;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
 
 trait ColumnCompiler
 {

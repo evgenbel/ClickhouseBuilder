@@ -1,26 +1,26 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Query;
+namespace Evgenbel\ClickhouseBuilder\Query;
 
 use function MongoDB\is_string_array;
-use Tinderbox\ClickhouseBuilder\Exceptions\GrammarException;
-use Tinderbox\ClickhouseBuilder\Query\Enums\Format;
-use Tinderbox\ClickhouseBuilder\Query\Traits\ColumnsComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\FormatComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\FromComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\GroupsComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\HavingsComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\ArrayJoinComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\JoinComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\LimitByComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\LimitComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\OrdersComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\PreWheresComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\SampleComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\TupleCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\TwoElementsLogicExpressionsCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\UnionsComponentCompiler;
-use Tinderbox\ClickhouseBuilder\Query\Traits\WheresComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Exceptions\GrammarException;
+use Evgenbel\ClickhouseBuilder\Query\Enums\Format;
+use Evgenbel\ClickhouseBuilder\Query\Traits\ColumnsComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\FormatComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\FromComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\GroupsComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\HavingsComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\ArrayJoinComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\JoinComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\LimitByComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\LimitComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\OrdersComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\PreWheresComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\SampleComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\TupleCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\TwoElementsLogicExpressionsCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\UnionsComponentCompiler;
+use Evgenbel\ClickhouseBuilder\Query\Traits\WheresComponentCompiler;
 
 class Grammar
 {

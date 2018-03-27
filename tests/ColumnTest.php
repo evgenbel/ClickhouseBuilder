@@ -1,14 +1,14 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Tinderbox\Clickhouse\Client;
-use Tinderbox\ClickhouseBuilder\Query\Builder;
-use Tinderbox\ClickhouseBuilder\Query\Column;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Query\Builder;
+use Evgenbel\ClickhouseBuilder\Query\Column;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
 
 class ColumnTest extends TestCase
 {

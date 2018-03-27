@@ -1,16 +1,16 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Tinderbox\Clickhouse\Client;
-use Tinderbox\ClickhouseBuilder\Query\Builder;
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinStrict;
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinType;
-use Tinderbox\ClickhouseBuilder\Query\Identifier;
-use Tinderbox\ClickhouseBuilder\Query\JoinClause;
+use Evgenbel\ClickhouseBuilder\Query\Builder;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinStrict;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinType;
+use Evgenbel\ClickhouseBuilder\Query\Identifier;
+use Evgenbel\ClickhouseBuilder\Query\JoinClause;
 
 class JoinClauseTest extends TestCase
 {

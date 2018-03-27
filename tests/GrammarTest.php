@@ -1,23 +1,23 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Tinderbox\Clickhouse\Client;
-use Tinderbox\ClickhouseBuilder\Exceptions\GrammarException;
-use Tinderbox\ClickhouseBuilder\Query\Builder;
-use Tinderbox\ClickhouseBuilder\Query\Column;
-use Tinderbox\ClickhouseBuilder\Query\Enums\Format;
-use Tinderbox\ClickhouseBuilder\Query\Enums\Operator;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
-use Tinderbox\ClickhouseBuilder\Query\From;
-use Tinderbox\ClickhouseBuilder\Query\Grammar;
-use Tinderbox\ClickhouseBuilder\Query\Identifier;
-use Tinderbox\ClickhouseBuilder\Query\JoinClause;
-use Tinderbox\ClickhouseBuilder\Query\Tuple;
-use Tinderbox\ClickhouseBuilder\Query\TwoElementsLogicExpression;
+use Evgenbel\ClickhouseBuilder\Exceptions\GrammarException;
+use Evgenbel\ClickhouseBuilder\Query\Builder;
+use Evgenbel\ClickhouseBuilder\Query\Column;
+use Evgenbel\ClickhouseBuilder\Query\Enums\Format;
+use Evgenbel\ClickhouseBuilder\Query\Enums\Operator;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Query\From;
+use Evgenbel\ClickhouseBuilder\Query\Grammar;
+use Evgenbel\ClickhouseBuilder\Query\Identifier;
+use Evgenbel\ClickhouseBuilder\Query\JoinClause;
+use Evgenbel\ClickhouseBuilder\Query\Tuple;
+use Evgenbel\ClickhouseBuilder\Query\TwoElementsLogicExpression;
 
 class GrammarTest extends TestCase
 {

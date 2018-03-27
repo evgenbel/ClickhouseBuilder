@@ -46,10 +46,10 @@ if (!function_exists('raw')) {
      *
      * @param string $expr
      *
-     * @return \Tinderbox\ClickhouseBuilder\Query\Expression
+     * @return \Evgenbel\ClickhouseBuilder\Query\Expression
      */
-    function raw(string $expr) : \Tinderbox\ClickhouseBuilder\Query\Expression
+    function raw(string $expr) : \Evgenbel\ClickhouseBuilder\Query\Expression
     {
-        return new \Tinderbox\ClickhouseBuilder\Query\Expression($expr);
+        return new \Evgenbel\ClickhouseBuilder\Query\Expression($expr);
     }
 }

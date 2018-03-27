@@ -1,6 +1,6 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Integrations\Laravel;
+namespace Evgenbel\ClickhouseBuilder\Integrations\Laravel;
 
 use Tinderbox\Clickhouse\Client;
 use Tinderbox\Clickhouse\Cluster;
@@ -9,8 +9,8 @@ use Tinderbox\Clickhouse\Interfaces\TransportInterface;
 use Tinderbox\Clickhouse\Server;
 use Tinderbox\Clickhouse\Transport\ClickhouseCLIClientTransport;
 use Tinderbox\Clickhouse\Transport\HttpTransport;
-use Tinderbox\ClickhouseBuilder\Exceptions\NotSupportedException;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Exceptions\NotSupportedException;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
 
 class Connection extends \Illuminate\Database\Connection
 {
@@ -233,7 +233,7 @@ class Connection extends \Illuminate\Database\Connection
     /**
      * Get a new query builder instance.
      *
-     * @return \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Builder
+     * @return \Evgenbel\ClickhouseBuilder\Integrations\Laravel\Builder
      */
     public function query()
     {
@@ -245,7 +245,7 @@ class Connection extends \Illuminate\Database\Connection
      *
      * @param string $table
      *
-     * @return \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Builder
+     * @return \Evgenbel\ClickhouseBuilder\Integrations\Laravel\Builder
      */
     public function table($table)
     {
@@ -362,7 +362,7 @@ class Connection extends \Illuminate\Database\Connection
      *
      * @return void
      */
-    public function rollBack()
+    public function rollBack($toLevel = NULL)
     {
         throw NotSupportedException::transactions();
     }
@@ -534,7 +534,7 @@ class Connection extends \Illuminate\Database\Connection
      *
      * @param string $hostname
      *
-     * @return \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection
+     * @return \Evgenbel\ClickhouseBuilder\Integrations\Laravel\Connection
      */
     public function using(string $hostname) : self
     {

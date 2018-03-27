@@ -1,15 +1,15 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Query;
+namespace Evgenbel\ClickhouseBuilder\Query;
 
 use Closure;
 use Tinderbox\Clickhouse\Common\TempTable;
-use Tinderbox\ClickhouseBuilder\Exceptions\BuilderException;
-use Tinderbox\ClickhouseBuilder\Query\Enums\Format;
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinStrict;
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinType;
-use Tinderbox\ClickhouseBuilder\Query\Enums\Operator;
-use Tinderbox\ClickhouseBuilder\Query\Enums\OrderDirection;
+use Evgenbel\ClickhouseBuilder\Exceptions\BuilderException;
+use Evgenbel\ClickhouseBuilder\Query\Enums\Format;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinStrict;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinType;
+use Evgenbel\ClickhouseBuilder\Query\Enums\Operator;
+use Evgenbel\ClickhouseBuilder\Query\Enums\OrderDirection;
 
 abstract class BaseBuilder
 {

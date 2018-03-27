@@ -1,6 +1,6 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Exceptions;
+namespace Evgenbel\ClickhouseBuilder\Exceptions;
 
 class Exception extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use PHPUnit\Framework\TestCase;
-use Tinderbox\ClickhouseBuilder\Query\Expression;
+use Evgenbel\ClickhouseBuilder\Query\Expression;
 
 class FunctionsTest extends TestCase
 {

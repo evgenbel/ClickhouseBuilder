@@ -1,11 +1,11 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Integrations\Laravel;
+namespace Evgenbel\ClickhouseBuilder\Integrations\Laravel;
 
 use Illuminate\Support\Traits\Macroable;
 use Tinderbox\Clickhouse\Common\Format;
-use Tinderbox\ClickhouseBuilder\Query\BaseBuilder;
-use Tinderbox\ClickhouseBuilder\Query\Grammar;
+use Evgenbel\ClickhouseBuilder\Query\BaseBuilder;
+use Evgenbel\ClickhouseBuilder\Query\Grammar;
 
 class Builder extends BaseBuilder
 {
@@ -16,14 +16,14 @@ class Builder extends BaseBuilder
     /**
      * Connection which is used to perform queries.
      *
-     * @var \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection
+     * @var \Evgenbel\ClickhouseBuilder\Integrations\Laravel\Connection
      */
     protected $connection;
 
     /**
      * Builder constructor.
      *
-     * @param \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection $connection
+     * @param \Evgenbel\ClickhouseBuilder\Integrations\Laravel\Connection $connection
      */
     public function __construct(Connection $connection)
     {

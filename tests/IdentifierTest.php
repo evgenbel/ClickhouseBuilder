@@ -1,9 +1,9 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder;
+namespace Evgenbel\ClickhouseBuilder;
 
 use PHPUnit\Framework\TestCase;
-use Tinderbox\ClickhouseBuilder\Query\Identifier;
+use Evgenbel\ClickhouseBuilder\Query\Identifier;
 
 class IdentifierTest extends TestCase
 {

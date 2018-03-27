@@ -1,9 +1,9 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Query;
+namespace Evgenbel\ClickhouseBuilder\Query;
 
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinStrict;
-use Tinderbox\ClickhouseBuilder\Query\Enums\JoinType;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinStrict;
+use Evgenbel\ClickhouseBuilder\Query\Enums\JoinType;
 
 class JoinClause
 {

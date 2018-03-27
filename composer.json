@@ -1,5 +1,5 @@
 {
-  "name": "the-tinderbox/clickhouse-builder",
+  "name": "evgenbel/clickhouse-builder",
   "description": "Clickhouse sql query builder",
   "authors": [
     {
@@ -13,7 +13,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Tinderbox\\ClickhouseBuilder\\": "src"
+      "Evgenbel\\ClickhouseBuilder\\": "src"
     },
     "files": [
       "src/functions.php"
@@ -21,7 +21,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Tinderbox\\ClickhouseBuilder\\": "tests"
+      "Evgenbel\\ClickhouseBuilder\\": "tests"
     },
     "files": [
       "src/functions.php"

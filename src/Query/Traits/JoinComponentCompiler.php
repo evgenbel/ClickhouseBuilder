@@ -1,10 +1,10 @@
 <?php
 
-namespace Tinderbox\ClickhouseBuilder\Query\Traits;
+namespace Evgenbel\ClickhouseBuilder\Query\Traits;
 
-use Tinderbox\ClickhouseBuilder\Exceptions\GrammarException;
-use Tinderbox\ClickhouseBuilder\Query\BaseBuilder as Builder;
-use Tinderbox\ClickhouseBuilder\Query\JoinClause;
+use Evgenbel\ClickhouseBuilder\Exceptions\GrammarException;
+use Evgenbel\ClickhouseBuilder\Query\BaseBuilder as Builder;
+use Evgenbel\ClickhouseBuilder\Query\JoinClause;
 
 trait JoinComponentCompiler
 {
